@@ -1,0 +1,126 @@
+{
+  "info": {
+    "_postman_id": "856709f2-4701-463d-af19-02545cbb074c",
+    "name": "trabalho-703",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53532575"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/CE?limite=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "cidades",
+            "CE"
+          ],
+          "query": [
+            {
+              "key": "limite",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Cidades - Sucesso",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/CE?limite=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "cidades",
+            "CE"
+          ],
+          "query": [
+            {
+              "key": "limite",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Cidades - Erro Sigla",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/v1/cidades/CEARA",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "cidades",
+            "CEARA"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "clima-sucesso",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "GET http://localhost:3000/api/v1/clima/Fortaleza",
+          "protocol": "GET http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "clima",
+            "Fortaleza"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "clima-error-404",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "clima-nmcurto-400",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
