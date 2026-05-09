@@ -59,7 +59,6 @@ app.get('/api/v1/cidades/:sigla_uf', async (req, res) => {
 });
 
 // Função utilitária para traduzir códigos de condição climática do Open-Meteo
-// Recebe um `weathercode` numérico e retorna uma descrição em português
 function traduzirClima(codigo) {
   const mapeamento = {
     0: "Céu limpo",
